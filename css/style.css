@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	background: ghostwhite;
+	padding: 20px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.left-side {
+	background: lavender;
+	text-align: center;
+}
+.right-side {
+	background: lightcoral;
+}
