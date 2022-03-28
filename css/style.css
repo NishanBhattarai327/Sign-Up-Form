@@ -139,3 +139,22 @@
 .non-typing-inputs a:visited, .non-typing-inputs a:link {
 	color: rgb(89 109 72);
 }
+
+
+
+/*checking for password validation***********/
+input[type=password]:focus:valid {
+	border: 1px solid green;
+}
+input[type=password]:focus:invalid + span::before {
+	content: "✖ weak password";
+	font-weight: 400;
+	font-size: 0.9rem;
+	color: red;
+}
+input[type=password]:focus:valid + span::before{
+	content: '✓ strong password';
+	font-weight: 400;
+	font-size: 0.9rem;
+	color: green;
+}
