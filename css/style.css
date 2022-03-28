@@ -3,19 +3,62 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+@font-face {
+	font-family: Norse-Bold;
+	src: url("../fonts/Norse-Bold.otf");
+}
+
 .container {
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
+	grid-template-columns: 1fr 2fr;
 	background: ghostwhite;
-	padding: 20px;
+	padding: 5px;
 	width: 100vw;
 	height: 100vh;
+	font-family: ubuntu, sans-serif;
 }
 
 .left-side {
 	background: lavender;
-	text-align: center;
+	background-image: url("../images/fern.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
 }
 .right-side {
 	background: lightcoral;
+}
+
+.text {
+	position: absolute;
+	top: 20%;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	padding: 20px;
+	font-family: Norse-Bold, sans-serif;
+	font-size: 5rem;
+	font-weight: 900;
+	color: rgba(255, 255, 255, 1);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo > img{
+	width: 5rem;
+}
+
+.credit {
+	--white-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	bottom: 5px;
+	color: var(--white-color);
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+	font-size: 0.7rem;
+}
+.credit a:visited, .credit a:link{
+	color: var(--white-color);
 }
