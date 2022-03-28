@@ -12,8 +12,6 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	background: ghostwhite;
-	padding: 5px 0px 5px 5px;
 	width: 100vw;
 	height: 100vh;
 	font-family: ubuntu, sans-serif;
@@ -85,6 +83,29 @@
 
 .typing-inputs input, .typing-inputs label {
 	display: block;
+}
+.typing-inputs label {
+	padding-bottom: 10px;
+}
+
+.typing-inputs input {
+	padding: 5px 8px;
+	width: 100%;
+	min-width: 250px;
+	max-width: 300px;
+	font-size: 1rem;
+	font-weight: 500;
+	border: 1px solid #00000015;
+	border-radius: 4px;
+}
+.typing-inputs input:focus {
+	outline: none;
+	border: 1px solid rgba(0, 0, 255, 0.8);
+	box-shadow: 1px 3px 6px -2px rgba(0, 0, 255, 0.3);
+}
+.typing-inputs input[type=password]:focus {
+	border: 1px solid red;
+	box-shadow: none;
 }
 .non-typing-inputs {
 	padding-top: 40px;
