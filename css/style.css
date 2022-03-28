@@ -13,7 +13,7 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	background: ghostwhite;
-	padding: 5px;
+	padding: 5px 0px 5px 5px;
 	width: 100vw;
 	height: 100vh;
 	font-family: ubuntu, sans-serif;
@@ -26,16 +26,13 @@
 	background-position: center;
 	position: relative;
 }
-.right-side {
-	background: lightcoral;
-}
 
 .text {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	background: rgba(0, 0, 0, 0.7);
 	width: 100%;
-	padding: 20px;
+	padding: 10px;
 	font-family: Norse-Bold, sans-serif;
 	font-size: 5rem;
 	font-weight: 900;
@@ -48,7 +45,6 @@
 .logo > img{
 	width: 5rem;
 }
-
 .credit {
 	--white-color: rgba(255, 255, 255, 0.8);
 	position: absolute;
@@ -61,4 +57,27 @@
 }
 .credit a:visited, .credit a:link{
 	color: var(--white-color);
+}
+
+
+/*Form side styling*/
+.right-side {
+	background: hsl(210deg 20% 98%);
+}
+.message, .typing-inputs, .non-typing-inputs {
+	padding-left: 30px;
+}
+.message {
+	padding: 100px 100px 40px 30px;
+}
+.typing-inputs {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	width: 100%;
+	background: hsl(0deg 0% 100%);
+	color: hsl(214deg 16% 26%);
+	box-shadow: 0px 3px 8px -5px #888888;
+}
+.non-typing-inputs {
+	padding-top: 40px;
 }
