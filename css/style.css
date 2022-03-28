@@ -71,12 +71,20 @@
 	padding: 100px 100px 40px 30px;
 }
 .typing-inputs {
-	padding-top: 30px;
-	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 70px;
+	grid-row-gap: 20px;
+
+	padding: 20px 0 20px 30px;
 	width: 100%;
 	background: hsl(0deg 0% 100%);
 	color: hsl(214deg 16% 26%);
 	box-shadow: 0px 3px 8px -5px #888888;
+}
+
+.typing-inputs input, .typing-inputs label {
+	display: block;
 }
 .non-typing-inputs {
 	padding-top: 40px;
